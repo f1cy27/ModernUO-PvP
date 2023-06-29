@@ -104,12 +104,12 @@ public partial class PublicMoongate : Item
         DeleteAll();
 
         var count = 0;
-
-        count += MoonGen(PMList.Trammel);
+        
+        //count += MoonGen(PMList.Trammel);
         count += MoonGen(PMList.Felucca);
-        count += MoonGen(PMList.Ilshenar);
-        count += MoonGen(PMList.Malas);
-        count += MoonGen(PMList.Tokuno);
+        //count += MoonGen(PMList.Ilshenar);
+        //count += MoonGen(PMList.Malas);
+        //count += MoonGen(PMList.Tokuno);
 
         World.Broadcast(0x35, true, $"{count} moongates generated.");
     }
@@ -278,18 +278,18 @@ public class PMList
         );
 
     public static PMList[] NoTrammelLists = { Felucca };
-    public static PMList[] T2ALists = { Trammel, Felucca };
-    public static PMList[] T2AListsYoung = { Trammel };
-    public static PMList[] LBRLists = { Trammel, Felucca, Ilshenar };
-    public static PMList[] LBRListsYoung = { Trammel, Ilshenar };
-    public static PMList[] AOSLists = { Trammel, Felucca, Ilshenar, Malas };
-    public static PMList[] AOSListsYoung = { Trammel, Ilshenar, Malas };
-    public static PMList[] SELists = { Trammel, Felucca, Ilshenar, Malas, Tokuno };
-    public static PMList[] SEListsYoung = { Trammel, Ilshenar, Malas, Tokuno };
-    public static PMList[] SALists = { Trammel, Felucca, Ilshenar, Malas, Tokuno, TerMur };
-    public static PMList[] SAListsYoung = { Trammel, Ilshenar, Malas, Tokuno, TerMur };
-    public static PMList[] TOLLists = { Trammel, Felucca, Ilshenar, Malas, Tokuno, TerMurEodon };
-    public static PMList[] TOLListsYoung = { Trammel, Ilshenar, Malas, Tokuno, TerMurEodon };
+    public static PMList[] T2ALists = { Felucca };
+    public static PMList[] T2AListsYoung = { Felucca };
+    public static PMList[] LBRLists = { Felucca };
+    public static PMList[] LBRListsYoung = { Felucca };
+    public static PMList[] AOSLists = { Felucca };
+    public static PMList[] AOSListsYoung = { Felucca };
+    public static PMList[] SELists = { Felucca };
+    public static PMList[] SEListsYoung = { Felucca };
+    public static PMList[] SALists = { Felucca };
+    public static PMList[] SAListsYoung = { Felucca };
+    public static PMList[] TOLLists = { Felucca };
+    public static PMList[] TOLListsYoung = { Felucca };
     public static PMList[] RedLists = { Felucca };
     public static PMList[] SigilLists = { Felucca };
 
