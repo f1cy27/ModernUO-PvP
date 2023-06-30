@@ -159,7 +159,7 @@ public static class CharacterCreation
 
             if (pm.AccessLevel == AccessLevel.Player && ((Account)pm.Account).Young)
             {
-                young = pm.Young = true;
+                young = pm.Young = false;
             }
         }
 
