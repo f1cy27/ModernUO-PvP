@@ -6302,13 +6302,13 @@ public class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPropertyLis
 
                     if (version < 3)
                     {
-                        m_StatCap = 225;
+                        m_StatCap = 360;
                     }
 
                     if (version < 15)
                     {
                         m_Followers = 0;
-                        m_FollowersMax = 5;
+                        m_FollowersMax = 10;
                     }
 
                     m_Location = reader.ReadPoint3D();
@@ -7710,8 +7710,8 @@ public class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPropertyLis
 
     public void DefaultMobileInit()
     {
-        m_StatCap = 225;
-        m_FollowersMax = 5;
+        m_StatCap = 360;
+        m_FollowersMax = 10;
         Skills = new Skills(this);
         Items = new List<Item>();
         _statMods = new List<StatMod>();
